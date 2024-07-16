@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First task</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        font-size: 14px;
+        padding-top: 20px;
+      }
+      hr {
+        color: rgb(12, 12, 12);
+      }
+      .row-bbox {
+        height: 100px;
+      }
+      input {
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 40vh;
+      }
+      textarea {
+        width: 40vh;
+      }
+      select {
+        width: 20vh;
+        padding-left: 10px;
+      }
+      li {
+        color: rgb(11, 235, 235);
+      }
+      .col-sm-3{
+        overflow: auto;
+        height: 450px;
+      }
+      .col-sm-3,
+      .col-sm-5,
+      .col-sm-1 {
+        border: 1px solid black;
+             
+       
+      }
+      .small-box {
+        display: flex;
+        justify-content: space-between;
+      }
+      .small-box-inner-bbox {
+        display: flex;
+      }
+      .icon-first {
+        padding-left: 25px;
+        background: url("https://static.thenounproject.com/png/101791-200.png")
+          no-repeat left;
+        background-size: 20px;
+      }
+      .status-container {
+        background-color: rgb(227, 227, 236);
+        padding-left: 12px;
+      }
+      .organization-inner {
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Part Start -->
+    <header>
+      <div class="headrow">
+        <div class="col-sm-6">header1</div>
+        <div class="col-sm-6">header2</div>
+      </div>
+    </header>
+    <!-- Header Part End -->
+
+    <!-- Organization Part Start -->
+    <!--   <div class="organization-part">
+      <input class="organization-inner" placeholder="Organization(create)" />
+      <input class="organization-inner" placeholder="Test1" />
+      <input class="organization-inner" placeholder="Open" />
+      <input class="organization-inner" placeholder="Question #28" />
+    </div> -->
+
+    <!-- Organzation Part End -->
+    <hr />
+
+    <!-- Three div Section Start -->
+    <div class="row-bbox">
+      <div class="col-sm-3 ">
+        <h4>Requester</h4>
+        <br />
+        <input class="icon-first" placeholder="Test1" />
+        <br /><br />
+        <h4>Assignee*</h4>
+        <input placeholder="Support/ Aniket Edalawar" />
+
+        <br /><br />
+        <h4>Followers*</h4>
+        <br />
+        <input placeholder="Followers" />
+        <br />
+        <hr />
+        <h4>Tags</h4>
+        <br />
+        <input placeholder="delivery" />
+        <br />
+        <br />
+        <div class="small-box">
+          <div class="smallest-box">
+            <h4>Type</h4>
+
+            <select>
+              <option selected disabled value="">Question</option>
+              <option>Question</option>
+              <option>Incident</option>
+              <option>Task</option>
+              <option>Problem</option>
+            </select>
+          </div>
+          <div class="smallest-box">
+            <h4>Priority</h4>
+            <select>
+              <option selected disabled value="">Low</option>
+              <option>Low</option>
+              <option>Normal</option>
+              <option>High</option>
+              <option>Urgent</option>
+            </select>
+          </div>
+        </div>
+        <br />
+        <h4>Topic</h4>
+        <br />
+        <select>
+          <option selected disabled value="">Topic</option>
+          <option>Delivery</option>
+          <option>Order</option>
+          <option>Other</option>
+        </select>
+        <br />
+
+        <hr />
+        <br />
+      </div>
+
+      <div class="col-sm-5">
+        <h3>Test</h3>
+        <p>Via Web Form</p>
+        <hr />
+        <div class="small-box-inner-bbox">
+          <h2>Aniket Edalawar</h2>
+
+          <ul>
+            <li >36 minutes ago</li>
+          </ul>
+        </div>
+        <h4>To: Test1  </h4>
+        <div class="status-container">
+            <p>Gfhaelkhligri</p>
+            <img src="th.jfif">
+            <br>
+            <p>firhi</p>
+            <p>sdhbkhgbzkd</p>
+
+        </div>
+        <hr>
+
+        <div class="small-box">
+            <p>Public reply</p>
+            <p>CC</p>
+            
+            
+        </div>
+
+      </div>
+      <div class="col-sm-3">
+        <h3 class="icon-first">Text1</h3>
+        <div class="mb-3 row">
+          <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input
+              type="text"
+              readonly
+              class="form-control-plaintext"
+              value="email@example.com"
+            />
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="staticEmail" class="col-sm-2 col-form-label"
+            >Local Time</label
+          >
+          <div class="col-sm-10">
+            <input
+              type="text"
+              readonly
+              class="form-control-plaintext"
+              value="Tue, 16:16 GMT+ 5.30"
+            />
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="staticEmail" class="col-sm-2 col-form-label">Lang</label>
+          <div class="col-sm-10">
+            <input
+              type="text"
+              readonly
+              class="form-control-plaintext"
+              value="English (United States)"
+            />
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="inputPassword" class="col-sm-2 col-form-label"
+            >Notes</label
+          >
+          <div class="col-sm-10">
+            <textarea></textarea>
+          </div>
+        </div>
+        <hr />
+        <h3>Interaction History</h3>
+        <div class="status-container">
+          <p>Test</p>
+          <p>36minutes ago</p>
+          <p>Status Open</p>
+        </div>
+
+
+        <br />
+        <br />
+      </div>
+
+      <div class="col-sm-1">
+        <p>Home</p>
+        <p>Contact</p>
+        <p>Window</p>
+
+      </div>
+    </div>
+
+    <!-- Three Div Section End -->
+  </body>
+</html>
